@@ -19,18 +19,18 @@ proxies:
       Host: 189.74.97.43
 - name: 🇺🇿 UZ 02 - xiaohe
   type: vless
-  server: 104.25.155.45
+  server: 172.64.95.237
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
+  uuid: 50414e45-4c5f-5a45-5553-565221666bd1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
+  servername: mczrh5e3u5ps.shoameny.workers.dev
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
+    path: /stream/PANEL_ZEUS/565221666bd1/loc-5
     headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+      Host: mczrh5e3u5ps.shoameny.workers.dev
 - name: 🇺🇿 UZ 03 - xiaohe
   type: vless
   server: 189.74.97.47
