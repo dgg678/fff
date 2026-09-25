@@ -5,30 +5,60 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  type: vless
-  server: 146.75.84.3
-  port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  type: vmess
+  server: 206.1.98.34
+  port: 26066
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ssl.fastly.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: BechBad.global.ssl.fastly.net
+      Host: ''
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  type: vmess
+  server: 103.215.218.158
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  type: vmess
+  server: 206.1.98.34
+  port: 26066
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
