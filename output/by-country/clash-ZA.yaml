@@ -20,10 +20,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 03 - xiaohe
   type: ss
-  server: 40.123.254.236
+  server: 40.123.240.235
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: M8Z2I7nGjhmwhy2m
+  password: WTQlw0DYHp6QQjow
   udp: true
 proxy-groups:
 - name: PROXIES
